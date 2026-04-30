@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Become a Member | AURUM Strength</title>
+    <meta
+      name="description"
+      content="Apply to become a member at AURUM Strength private gym in Antwerp."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&amp;family=Funnel+Sans:wght@300..800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header">
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <a class="brand" href="index.html" aria-label="Aurum Strength home">
+          <img src="assets/logo-horizontal-beige.svg" alt="AURUM Strength" />
+        </a>
+        <a class="member-cta" href="member.html">Become a member</a>
+        <nav class="site-nav" id="site-nav" aria-label="Primary">
+          <div class="nav-panel">
+            <div class="nav-column">
+              <p>Navigate</p>
+              <a href="index.html">Home</a>
+              <a href="offer.html">Offer</a>
+              <a href="system.html">System</a>
+              <a href="academy.html">Academy</a>
+              <a href="contact.html">Contact</a>
+            </div>
+            <div class="nav-column nav-column-large">
+              <p>Start</p>
+              <a class="is-active" href="member.html">Become a member</a>
+              <a href="contact.html">Book intake</a>
+            </div>
+            <div class="nav-column nav-meta">
+              <p>AURUM Strength</p>
+              <span>Private gym, coaching academy and app support in Antwerp.</span>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <main>
+        <section class="member-hero section">
+          <div class="reveal">
+            <p class="eyebrow">Become a member</p>
+            <h1>Start with structure. Train with standards.</h1>
+            <p>
+              Apply for a focused membership at AURUM Strength. We review every
+              request so the coaching environment stays calm, personal and precise.
+            </p>
+          </div>
+          <figure class="member-media reveal">
+            <img
+              src="assets/aurum-coaching.jpeg"
+              alt="AURUM Strength coaching session"
+            />
+          </figure>
+        </section>
+
+        <section class="section member-layout">
+          <div class="question-heading reveal">
+            <p class="eyebrow">Application</p>
+            <h2>Tell us what you need.</h2>
+            <p>We will contact you to plan the right first step.</p>
+          </div>
+
+          <form
+            class="contact-form reveal"
+            action="mailto:info@aurumstrength.com"
+            method="post"
+            enctype="text/plain"
+          >
+            <div class="form-row">
+              <label>
+                <span>First name</span>
+                <input type="text" name="First name" autocomplete="given-name" required />
+              </label>
+              <label>
+                <span>Last name</span>
+                <input type="text" name="Last name" autocomplete="family-name" required />
+              </label>
+            </div>
+
+            <div class="form-row">
+              <label>
+                <span>Email</span>
+                <input type="email" name="Email" autocomplete="email" required />
+              </label>
+              <label>
+                <span>Phone number</span>
+                <input type="tel" name="Phone" autocomplete="tel" required />
+              </label>
+            </div>
+
+            <label>
+              <span>Main goal</span>
+              <select name="Main goal" required>
+                <option value="">Select an option</option>
+                <option value="Strength">Strength</option>
+                <option value="Body composition">Body composition</option>
+                <option value="Performance">Performance</option>
+                <option value="Health and consistency">Health and consistency</option>
+              </select>
+            </label>
+
+            <label>
+              <span>Training experience</span>
+              <select name="Training experience" required>
+                <option value="">Select an option</option>
+                <option value="Beginner">Beginner</option>
+                <option value="Intermediate">Intermediate</option>
+                <option value="Advanced">Advanced</option>
+                <option value="Returning after a break">Returning after a break</option>
+              </select>
+            </label>
+
+            <label>
+              <span>Message</span>
+              <textarea name="Message" rows="6" placeholder="Tell us about your goals, current training and preferred timing." required></textarea>
+            </label>
+
+            <button class="button button-primary" type="submit">Send application</button>
+          </form>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div>
+          <p>AURUM Strength</p>
+          <p>Private gym, coaching academy and app support under one clear identity.</p>
+        </div>
+        <nav class="footer-socials" aria-label="Social media">
+          <a href="https://www.instagram.com/aurumstrength/" target="_blank" rel="noopener" aria-label="AURUM Strength on Instagram">Ig</a>
+          <a href="https://www.facebook.com/aurumstrength/" target="_blank" rel="noopener" aria-label="AURUM Strength on Facebook">Fb</a>
+          <a href="https://www.linkedin.com/company/aurum-strength/" target="_blank" rel="noopener" aria-label="AURUM Strength on LinkedIn">In</a>
+        </nav>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
