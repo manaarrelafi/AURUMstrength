@@ -509,6 +509,10 @@ h3 {
   min-height: clamp(420px, 58vw, 690px);
 }
 
+.hero-media {
+  margin-left: clamp(2rem, 5vw, 6rem);
+}
+
 .image-frame {
   min-height: 520px;
 }
@@ -1365,6 +1369,10 @@ h3 {
   .contact-media,
   .member-media {
     min-height: 380px;
+  }
+
+  .hero-media {
+    margin-left: 0;
   }
 
   .academy-media {
