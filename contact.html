@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | AURUM Strength</title>
+    <meta
+      name="description"
+      content="Contact AURUM Strength in Berchem, Antwerp to book an intake or ask a question."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&amp;family=Funnel+Sans:wght@300..800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header">
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <a class="brand" href="index.html" aria-label="Aurum Strength home">
+          <img src="assets/logo-horizontal-beige.svg" alt="AURUM Strength" />
+        </a>
+        <a class="member-cta" href="contact.html">Become a member</a>
+        <nav class="site-nav" id="site-nav" aria-label="Primary">
+          <div class="nav-panel">
+            <div class="nav-column">
+              <p>Navigate</p>
+              <a href="index.html">Home</a>
+              <a href="offer.html">Offer</a>
+              <a href="system.html">System</a>
+              <a href="academy.html">Academy</a>
+              <a class="is-active" href="contact.html">Contact</a>
+            </div>
+            <div class="nav-column nav-column-large">
+              <p>Start</p>
+              <a href="contact.html">Become a member</a>
+              <a href="contact.html">Book intake</a>
+            </div>
+            <div class="nav-column nav-meta">
+              <p>AURUM Strength</p>
+              <span>Private gym, coaching academy and app support in Antwerp.</span>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <main>
+        <section class="contact-hero section">
+          <div class="reveal">
+            <p class="eyebrow">Contact</p>
+            <h1>Visit the gym. Meet the team. Start with a clear plan.</h1>
+          </div>
+          <figure class="contact-media reveal">
+            <img
+              src="assets/aurum-coaching.jpeg"
+              alt="AURUM private gym training session"
+            />
+          </figure>
+        </section>
+
+        <section class="section contact-layout">
+          <article class="contact-card reveal">
+            <p class="card-label">Visit us</p>
+            <h2>Aurum Strength Private Gym</h2>
+            <p>Berchemstadionstraat 78<br />2600 Berchem, Antwerp</p>
+            <p>Monday to Friday: 7am - 9pm<br />Saturday, Sunday &amp; Holidays: 8am - 2pm</p>
+          </article>
+
+          <article class="contact-card reveal">
+            <p class="card-label">Get in touch</p>
+            <h2>Book an intake or ask your question.</h2>
+            <p>info@aurumstrength.com<br />+32 496 02 43 41</p>
+            <a class="button button-secondary" href="mailto:info@aurumstrength.com">Email Aurum</a>
+          </article>
+
+          <aside class="contact-note reveal">
+            <p>Intakes are personal, focused and practical. You leave knowing what the first training block looks like.</p>
+          </aside>
+        </section>
+
+        <section class="section map-section reveal">
+          <div class="map-copy">
+            <p class="eyebrow">Location</p>
+            <h2>Find us in Berchem.</h2>
+            <p>Berchemstadionstraat 78, 2600 Berchem</p>
+          </div>
+          <a
+            class="map-card"
+            href="https://www.google.com/maps/search/?api=1&amp;query=Berchemstadionstraat%2078%2C%202600%20Berchem"
+            target="_blank"
+            rel="noopener"
+            aria-label="Open Aurum Strength location in Google Maps"
+          >
+            <iframe
+              title="Map showing Berchemstadionstraat 78, 2600 Berchem"
+              src="https://www.google.com/maps?q=Berchemstadionstraat%2078%2C%202600%20Berchem&amp;output=embed"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <span class="map-badge">Open in Google Maps</span>
+          </a>
+        </section>
+
+        <section class="section question-section reveal">
+          <div class="question-heading">
+            <p class="eyebrow">Questions</p>
+            <h2>Ask us anything.</h2>
+            <p>We will get back to you as soon as possible.</p>
+          </div>
+
+          <form
+            class="contact-form"
+            action="mailto:info@aurumstrength.com"
+            method="post"
+            enctype="text/plain"
+          >
+            <div class="form-row">
+              <label>
+                <span>First name</span>
+                <input type="text" name="First name" autocomplete="given-name" required />
+              </label>
+              <label>
+                <span>Last name</span>
+                <input type="text" name="Last name" autocomplete="family-name" required />
+              </label>
+            </div>
+
+            <label>
+              <span>Email</span>
+              <input type="email" name="Email" autocomplete="email" required />
+            </label>
+
+            <label>
+              <span>Phone number</span>
+              <input type="tel" name="Phone" autocomplete="tel" />
+            </label>
+
+            <label>
+              <span>Message</span>
+              <textarea name="Message" rows="6" required></textarea>
+            </label>
+
+            <label>
+              <span>I'm interested in</span>
+              <select name="Interest" required>
+                <option value="">Select an option</option>
+                <option value="Private Gym">Private Gym</option>
+                <option value="Coaching Academy">Coaching Academy</option>
+                <option value="Fitness App">Fitness App</option>
+                <option value="Other question">Other question</option>
+              </select>
+            </label>
+
+            <button class="button button-primary" type="submit">Send question</button>
+          </form>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div>
+          <p>AURUM Strength</p>
+          <p>Private gym, coaching academy and app support under one clear identity.</p>
+        </div>
+        <nav class="footer-socials" aria-label="Social media">
+          <a href="https://www.instagram.com/aurumstrength/" target="_blank" rel="noopener" aria-label="AURUM Strength on Instagram">Ig</a>
+          <a href="https://www.facebook.com/aurumstrength/" target="_blank" rel="noopener" aria-label="AURUM Strength on Facebook">Fb</a>
+          <a href="https://www.linkedin.com/company/aurum-strength/" target="_blank" rel="noopener" aria-label="AURUM Strength on LinkedIn">In</a>
+        </nav>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
