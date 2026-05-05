@@ -372,9 +372,12 @@ main,
 }
 
 .hero {
+  position: relative;
+  grid-template-columns: 1fr;
   min-height: 100vh;
   align-items: stretch;
   padding-top: 0;
+  overflow: hidden;
 }
 
 .page-hero,
@@ -391,6 +394,13 @@ main,
 .contact-hero > div {
   align-self: center;
   padding-top: 7rem;
+}
+
+.hero-copy {
+  position: relative;
+  z-index: 2;
+  max-width: 780px;
+  padding-bottom: 4rem;
 }
 
 .hero .hero-media,
@@ -510,7 +520,15 @@ h3 {
 }
 
 .hero-media {
-  margin-left: clamp(2rem, 5vw, 6rem);
+  position: absolute;
+  inset: 0;
+  left: 50%;
+  z-index: 0;
+  width: 100vw;
+  min-height: 100vh;
+  margin-left: 0;
+  transform: translateX(-50%);
+  box-shadow: none;
 }
 
 .image-frame {
@@ -527,8 +545,8 @@ h3 {
   height: 100%;
   min-height: inherit;
   object-fit: cover;
-  opacity: 0.56;
-  filter: grayscale(1) contrast(1.12) brightness(0.82);
+  opacity: 0.82;
+  filter: saturate(1.18) contrast(1.04) brightness(0.94);
 }
 
 .hero-media::after,
@@ -544,6 +562,13 @@ h3 {
     linear-gradient(180deg, transparent 42%, rgba(5, 5, 5, 0.56)),
     linear-gradient(135deg, rgba(255, 93, 23, 0.2), transparent 38%);
   pointer-events: none;
+}
+
+.hero-media::after {
+  background:
+    linear-gradient(90deg, rgba(5, 5, 5, 0.88) 0%, rgba(5, 5, 5, 0.52) 42%, rgba(5, 5, 5, 0.14) 100%),
+    linear-gradient(180deg, rgba(5, 5, 5, 0.26) 0%, rgba(5, 5, 5, 0.18) 48%, rgba(5, 5, 5, 0.7) 100%),
+    linear-gradient(135deg, rgba(255, 93, 23, 0.22), transparent 44%);
 }
 
 .proof-strip {
