@@ -14,7 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&amp;family=Funnel+Sans:wght@300..800&amp;display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css?v=2" />
   </head>
   <body>
     <div class="site-shell">
@@ -62,9 +62,26 @@
 
       <main>
         <section class="hero section">
-          <div class="hero-copy reveal">
+          <figure class="hero-media">
+            <div class="hero-video-frame">
+              <video
+                src="assets/video_aurum.MOV"
+                poster="assets/landingpagePic.jpg"
+                autoplay
+                muted
+                playsinline
+                aria-label="AURUM Strength training atmosphere"
+              ></video>
+            </div>
+          </figure>
+        </section>
+
+        <section class="home-intro section reveal">
+          <div>
             <p class="eyebrow">Private Gym Antwerp</p>
             <h1>High-end coaching for serious progress.</h1>
+          </div>
+          <div>
             <p class="hero-text">
               A calm, controlled training environment for people who want
               coaching with structure, precision and measurable standards.
@@ -75,13 +92,6 @@
               <a class="button button-secondary" href="offer.html">See the offer</a>
             </div>
           </div>
-
-          <figure class="hero-media reveal">
-            <img
-              src="assets/landingpagePic.jpg"
-              alt="AURUM coach guiding a strength session"
-            />
-          </figure>
         </section>
 
         <section class="proof-strip reveal" aria-label="Aurum strengths">
